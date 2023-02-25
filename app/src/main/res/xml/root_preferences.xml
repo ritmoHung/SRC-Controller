@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/tx_header" >
+
+        <EditTextPreference
+            app:key="TX_FORWARDS"
+            app:title="@string/tx_forwards_title"
+            app:defaultValue="F"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="TX_BACKWARDS"
+            app:title="@string/tx_backwards_title"
+            app:defaultValue="B"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="TX_LEFT"
+            app:title="@string/tx_left_title"
+            app:defaultValue="L"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="TX_RIGHT"
+            app:title="@string/tx_right_title"
+            app:defaultValue="R"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="TX_STOP"
+            app:title="@string/tx_stop_title"
+            app:defaultValue="S"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/speed_header" >
+
+        <SwitchPreferenceCompat
+            app:key="SPD_OVERRIDE"
+            app:title="@string/spd_override_title"
+            app:summaryOff="@string/spd_override_summary_off"
+            app:summaryOn="@string/spd_override_summary_on"
+            app:defaultValue="false"/>
+        <SeekBarPreference
+            app:dependency="SPD_OVERRIDE"
+            app:key="SPD_VALUE"
+            app:showSeekBarValue="true"
+            app:summary="@string/spd_summary"
+            app:title="Speed"
+            android:max="250"
+            app:min="50"
+            app:defaultValue="150"
+            app:seekBarIncrement="10"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

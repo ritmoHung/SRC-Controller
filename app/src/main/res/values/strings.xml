@@ -1,0 +1,84 @@
+<resources>
+    <!-- Strings used for app name, activities and its items -->
+    <string name="app_name">SRC Controller</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_btlist">Device List</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments and its components for navigation -->
+    <string name="first_fragment_label">Control Panel</string>
+    <string name="second_fragment_label">Second</string>
+    <string name="notConnectedText">Not connected to BT device.</string>
+    <string name="notInitText">Vosk SR not initialized.</string>
+    <string name="nextText">Next</string>
+    <string name="prevText">Previous</string>
+
+    <!-- Bluetooth Messages -->
+    <string name="BT_NA">BT: Not available</string>
+    <string name="BT_ON">BT: Turned on</string>
+    <string name="BT_ALREADY_ON">BT: Already turned on</string>
+    <string name="BT_NO_PAIRED">BT: No paired device\nPair in system settings beforehand</string>
+    <string name="BT_SUCCESS">BT: Connected</string>
+    <string name="BT_FAIL">BT: Failed to connect</string>
+    <string name="BT_CLOSED">BT: Disconnected</string>
+    <string name="BT_UNSAFE_CLOSED">BT: Forced disconnected</string>
+    <string name="BT_IO_FAIL">BT: IO failure</string>
+
+
+    <!-- -->
+
+
+    <!-- VOSK Speech Recognizer Messages -->
+    <string name="fileModeText">File</string>
+    <string name="micModeText">Mic</string>
+    <string name="stopMicText">Stop Mic</string>
+    <string name="preparingText">Preparing the recognizer…</string>
+    <string name="readyText">Ready</string>
+    <string name="failed">Failed to init recognizer %s\n</string>
+    <string name="elapsed">Result %s elapsed %d milliseconds\n</string>
+    <string name="startingFileText">Starting…</string>
+    <string name="sayCommand">Say your command…</string>
+    <string name="stopFileText">Stop File</string>
+    <string name="pause">Pause</string>
+    <string name="continueRecognition">Continue</string>
+    <string name="matchText">Matches</string>
+    <string name="noMatchText">No matches</string>
+
+
+    <!-- -->
+
+
+    <!-- Preference Titles -->
+    <string name="tx_header">Transmission</string>
+    <!--string name="tx_summary">String value being sent through bluetooth</string-->
+    <string name="speed_header">Speed Control</string>
+
+    <!-- Transmission Preferences -->
+    <string name="tx_forwards_title">Forwards String Value</string>
+    <string name="tx_backwards_title">Backwards String Value</string>
+    <string name="tx_left_title">Left String Value</string>
+    <string name="tx_right_title">Right String Value</string>
+    <string name="tx_stop_title">Stop String Value</string>
+
+    <!-- Speed Control Preferences -->
+    <string name="spd_override_title">Speed Override</string>
+    <string name="spd_override_summary_on">Overrides the default speed</string>
+    <string name="spd_override_summary_off">Use default speed set in the car</string>
+    <string name="spd_summary">This will not affect speed of direction changing</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>
